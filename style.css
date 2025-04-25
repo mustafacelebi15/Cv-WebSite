@@ -302,26 +302,31 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         gap: 1rem;
+        padding-right: 1rem;
     }
 
     .nav-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 0.3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
+        width: 50%;
+        margin-right: 0.5rem;
     }
 
     .nav-button {
         font-size: 11px;
-        padding: 0.3rem 0.6rem;
+        padding: 0.4rem 0.5rem;
         white-space: nowrap;
+        text-align: center;
+        width: 100%;
     }
 
     .logo-text h1 {
         font-size: 16px;
         text-align: left;
+        margin-left: 0.5rem;
     }
 
     .hero h2 {
@@ -340,24 +345,27 @@ footer {
 
 @media screen and (max-width: 480px) {
     .container {
-        padding: 0 1rem;
+        padding: 0 0.8rem;
     }
 
     .header-content {
         padding: 0 0.5rem;
+        align-items: center;
     }
 
     .nav-buttons {
-        gap: 0.2rem;
+        width: 60%;
+        margin-right: 0.3rem;
     }
 
     .nav-button {
         font-size: 10px;
-        padding: 0.3rem 0.5rem;
+        padding: 0.35rem 0.4rem;
     }
 
     .logo-text h1 {
         font-size: 14px;
+        margin-left: 0.3rem;
     }
 
     .hero h2 {
