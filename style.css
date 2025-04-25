@@ -299,26 +299,29 @@ footer {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .header-content {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         gap: 1rem;
     }
 
     .nav-buttons {
+        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
+        justify-content: flex-end;
+        gap: 0.3rem;
     }
 
     .nav-button {
-        font-size: 12px;
-        padding: 0.4rem 0.8rem;
-        min-width: 100px;
-        text-align: center;
+        font-size: 11px;
+        padding: 0.3rem 0.6rem;
+        white-space: nowrap;
     }
 
     .logo-text h1 {
-        font-size: 18px;
-        text-align: center;
+        font-size: 16px;
+        text-align: left;
     }
 
     .hero h2 {
@@ -340,15 +343,21 @@ footer {
         padding: 0 1rem;
     }
 
+    .header-content {
+        padding: 0 0.5rem;
+    }
+
     .nav-buttons {
-        width: 100%;
+        gap: 0.2rem;
     }
 
     .nav-button {
-        flex: 1;
-        min-width: 45%;
-        font-size: 11px;
-        padding: 0.3rem 0.6rem;
+        font-size: 10px;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .logo-text h1 {
+        font-size: 14px;
     }
 
     .hero h2 {
